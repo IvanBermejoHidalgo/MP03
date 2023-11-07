@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class ExpressionsRegulars {
     public static void main(String[] args) {
         try {
-            String archivo = "/home/ivan/Descargas/santako.txt";
+            String archivo = "santako.txt";
             BufferedReader br = new BufferedReader(new FileReader(archivo));
 
             String linea = "";
@@ -32,7 +32,7 @@ public class ExpressionsRegulars {
                 if (folletcontador > 0) {
                     salida.append("Follet (").append(folletcontador).append(") ");
                 }
-                System.out.println(salida.toString().trim());
+                    System.out.println(salida.toString().trim());
             }
 
             br.close();
