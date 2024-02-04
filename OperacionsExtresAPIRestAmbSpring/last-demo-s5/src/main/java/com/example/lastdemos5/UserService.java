@@ -52,9 +52,9 @@ public class UserService {
         if (optionalUser.isPresent()){
             User existe = optionalUser.get();
             if (updates.containsKey("fullName")){
-                existe.setEmail((String) updates.get("fullName"));
+                existe.setFullName((String) updates.get("fullName"));
             }if (updates.containsKey("password")){
-                existe.setEmail((String) updates.get("password"));
+                existe.setPassword((String) updates.get("password"));
             }if (updates.containsKey("email")){
                 existe.setEmail((String) updates.get("email"));
             }
